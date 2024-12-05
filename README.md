@@ -30,7 +30,9 @@ http://localhostにアクセスして
 ```
 
 ## 使用技術(実行環境)
-- 例) Laravel 8.x(言語やフレームワーク、バージョンなどが記載されていると良い)
+- Laravel 8.83.8
+  PHP 7.4.9
+  mysql 8.0.29
 
 ## ER図
 < - - - 作成したER図の画像 - - - >
@@ -38,4 +40,5 @@ http://localhostにアクセスして
 
 
 ## URL
-- 例) 開発環境：http://localhost/
+- 開発環境:http://localhost/
+  phpMyadmin:http://localhost:8080/
