@@ -15,18 +15,17 @@ class ContactFactory extends Factory
     public function definition()
     {
         return [
-            'id' => $this->faker->randomNumber,
-            'category_id' => $this->randomNumber,
-            'first_name' => $this->name,
-            'last_name' => $this->name,
-            'gender' => $this->number Between(1,3),
-            'email' => $this->safeEmail,
-            'tel' => $this->phoneNumber,
-            'address' => $this->address,
-            'building' => $this->numerify('マンション###号室'),
-            'detail' => $this->sentence,
-            'created_at' => $this->date,
-            'updated_at' => $this->date
+            'category_id' => $this->faker->randomNumber,
+            'first_name' => $this->faker->name,
+            'last_name' => $this->faker->name,
+            'gender' => $this->faker->numberBetween(1,3),
+            'email' => $this->faker->safeEmail,
+            'tel' => $this->faker->phoneNumber,
+            'address' => $this->faker->address,
+            'building' => $this->faker->numerify('マンション###号室'),
+            'detail' => $this->faker->sentence,
+            'created_at' => $this->faker->date,
+            'updated_at' => $this->faker->date
         ];
     }
 }
